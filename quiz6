@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int z,c,v;
+
+ int g (int x, int y){
+   if (x==0){
+     return y;
+   }
+   else if (y==0){
+     return x;
+   }
+   else {
+      if(x>y){
+        while(y!=0){
+int a=x/y, b= x%y;
+         x=y;
+         y=b;
+       }
+   return x;
+   }
+   if (y>x){
+     while(x!=0){
+  int a=y/x, b=y%x;
+       y=x;
+       x=b;
+     }
+     return y;
+   }
+  }
+}
+
+int main(){
+
+cout << "Please write a number: " << endl;
+cin>>z;
+cout<<"Now write another number, please: "<< endl;
+cin>>c;
+
+v= g(z,c);
+
+cout << "The greatest common denominator is: "<< v << endl;
+
+return 0;
+
+}
